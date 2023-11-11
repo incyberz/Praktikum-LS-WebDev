@@ -1,0 +1,35 @@
+.tengah {
+  text-align: center;
+}
+.kiri {
+  text-align: left;
+}
+.kanan {
+  text-align: right;
+}
+.consolas {
+  font-family: consolas;
+}
+.f24 {
+  font-size: 24px;
+}
+.hijau,
+.green {
+  color: green;
+}
+.merah,
+.red {
+  color: red;
+}
+.biru,
+.blue {
+  color: blue;
+}
+.tebal,
+.bold {
+  font-weight: bold;
+}
+.miring,
+.italic {
+  font-style: italic;
+}

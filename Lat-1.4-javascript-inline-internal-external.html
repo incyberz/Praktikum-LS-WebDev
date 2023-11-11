@@ -1,0 +1,41 @@
+<html>
+  <head>
+    <title>Lat-1.4</title>
+    <link rel="stylesheet" href="css/my-style.css" />
+    <script src="js/my-script.js"></script>
+    <script>
+      function alertInternal() {
+        alert("Hallo! Ini alert Javascript secara internal.");
+        alert("Kelebihan secara internal dapat lebih dari satu perintah.");
+        confirm("Anda faham?");
+      }
+    </script>
+  </head>
+  <body>
+    <h1>Javascript Inline, internal, eksternal</h1>
+    <button
+      class="tengah consolas f24 merah tebal miring"
+      onclick="alert('Hallo! Ini alert Javascript secara inline.')"
+    >
+      Javascript Inline
+    </button>
+
+    <hr />
+
+    <button
+      class="tengah consolas f24 hijau tebal miring"
+      onclick="alertInternal()"
+    >
+      Javascript Internal
+    </button>
+
+    <hr />
+
+    <button
+      class="tengah consolas f24 biru tebal miring"
+      onclick="alertExternal()"
+    >
+      Javascript External
+    </button>
+  </body>
+</html>

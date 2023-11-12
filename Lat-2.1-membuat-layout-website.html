@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>CSS Layout</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      header {
+        background-color: #666;
+        padding: 30px;
+        text-align: center;
+        font-size: 35px;
+        color: white;
+      }
+
+      /* Container for flexboxes */
+      section {
+        display: flex;
+      }
+
+      nav {
+        flex: 1;
+        background: #ccc;
+        padding: 20px;
+      }
+
+      nav ul {
+        list-style-type: none;
+        padding: 0;
+      }
+
+      article {
+        flex: 5;
+        background-color: #f1f1f1;
+        padding: 10px;
+      }
+
+      footer {
+        background-color: #777;
+        padding: 10px;
+        text-align: center;
+        color: white;
+      }
+
+      /* Responsive layout */
+      @media (max-width: 600px) {
+        section {
+          flex-direction: column;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <h2>CSS Layout Flexbox</h2>
+    <p>Resize browser untuk melihat efek responsiveness.</p>
+
+    <header>
+      <h2>Kota di Indonesia</h2>
+    </header>
+
+    <section>
+      <nav>
+        <ul>
+          <li><a href="#">Jakarta</a></li>
+          <li><a href="#">Bandung</a></li>
+          <li><a href="#">Cirebon</a></li>
+        </ul>
+      </nav>
+
+      <article>
+        <h1>Jakarta</h1>
+        <p>
+          Jakarta Jakarta, secara resmi bernama Daerah Khusus Ibukota Jakarta
+          atau DKI Jakarta, adalah ibu kota Indonesia dan sekaligus daerah
+          otonom setingkat provinsi.
+        </p>
+        <p>
+          Provinsi DKI Jakarta mempunyai luas daratan 661,52 km2 dan lautan
+          seluas 6.977,5 km2 serta tercatat ±110 pulau yang tersebar di
+          Kepulauan Seribu.
+        </p>
+      </article>
+    </section>
+
+    <footer>
+      <p>Footer</p>
+    </footer>
+  </body>
+</html>
